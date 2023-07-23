@@ -4,6 +4,7 @@ import AddTransactionForm from './AddTransactionForm';
 import SearchBar from './SearchBar';
 import Transaction from "./Transaction";
 
+
 function App() {
     const [transactions, setTransactions] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
