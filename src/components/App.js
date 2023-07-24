@@ -6,13 +6,14 @@ import Transaction from "./Transaction";
 
 
 function App() {
+
     const [transactions, setTransactions] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         fetchTransactions();
     }, []);
-
+// fetch data from the url
     const fetchTransactions = async () => {
         const response = await fetch('http://localhost:8001/transactions');
         const data = await response.json();
